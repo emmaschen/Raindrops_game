@@ -5,10 +5,11 @@ class Catcher {
   Catcher(){
     loc= new PVector(mouseX, height-d);
     d= 30;
+  }
     void display(){
       ellipse(loc.x, loc.y, d,d);
     }
-    Void update(){
+    void update(){
       loc.set(mouseX, height-d);
     }
   }
